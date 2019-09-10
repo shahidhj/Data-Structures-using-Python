@@ -1,2 +1,2 @@
 # Data-structures-and-Algorithms-practice
-Practice DS and Algorithms from the course Master the coding interview
+Implementation of Hash Table using List in python
