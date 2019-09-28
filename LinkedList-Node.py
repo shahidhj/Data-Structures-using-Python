@@ -39,7 +39,7 @@ class LinkedList:
 
     def remove(self,index):
         currentNode = Node(value=0)
-        leader = self.traversetoIndex(index=index)
+        leader = self.traversetoIndex(index-1)
         currentNode=leader.next
         leader.next = currentNode.next
         self.length = self.length - 1
@@ -57,6 +57,8 @@ class LinkedList:
 myLinkedList = LinkedList(10)
 myLinkedList.append(15)
 myLinkedList.append(10)
+myLinkedList.insert(1,80)
+myLinkedList.remove(2)
 myLinkedList.printList()
 
 
