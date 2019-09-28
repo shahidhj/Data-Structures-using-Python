@@ -1,5 +1,5 @@
 class LinkedList:
-    def __init__(self,value):
+    def __init__(self, value):
         self.head = {
             value:value,
             next: None
@@ -26,7 +26,17 @@ class LinkedList:
         self.head = self.PrependNode
         self.length = self.length +1
 
+    def __str__(self):
+        return str(self.head)
+
+
     def insert(self,index,value):
+        self.NewNode ={
+            value:value,
+            next:None
+        }
+
+
 
 
 myLinkedList = LinkedList(10)
@@ -35,4 +45,3 @@ myLinkedList.append(4)
 myLinkedList.append((3))
 myLinkedList.prepend(14)
 myLinkedList.prepend(190)
-print(myLinkedList.head)
