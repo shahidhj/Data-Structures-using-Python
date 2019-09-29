@@ -60,9 +60,12 @@ class HashTable:
 
 myFirstHash = HashTable()
 myFirstHash.add("shahid","1234")
+myFirstHash.add("hsahid","abcdefgh")
 myFirstHash.add("abc","3214")
+
 myFirstHash.print()
 myFirstHash.keys()
+print(myFirstHash.map)
 
 
 
