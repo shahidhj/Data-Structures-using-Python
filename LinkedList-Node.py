@@ -19,7 +19,7 @@ class LinkedList:
     def prepend(self,value):
         self.NewNode = Node(value=value)
         self.NewNode.next = self.head
-        self.NewNode = self.head
+        self.head = self.NewNode
         self.length = self.length + 1
 
     def printList(self):
@@ -53,6 +53,24 @@ class LinkedList:
             counter = counter + 1
         return currentNode
 
+    def reverse(self):
+        if(self.head.next == None):
+            return self.head
+        firstNode = self.head
+        secondNode = firstNode.next
+        while(secondNode != None):
+            tempNode = secondNode.next
+            secondNode.next = firstNode
+            firstNode = secondNode
+            secondNode = tempNode
+
+        self.head.next = None
+        self.head = firstNode
+
+        return self.printList()
+
+
+
 
 
 myLinkedList = LinkedList(10)
@@ -62,5 +80,6 @@ myLinkedList.insert(1,80)
 myLinkedList.remove(2)
 myLinkedList.prepend(100)
 myLinkedList.printList()
+myLinkedList.reverse()
 
 
