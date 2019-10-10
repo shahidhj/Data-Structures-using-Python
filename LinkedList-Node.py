@@ -66,7 +66,6 @@ class LinkedList:
 
         self.head.next = None
         self.head = firstNode
-
         return self.printList()
 
 
