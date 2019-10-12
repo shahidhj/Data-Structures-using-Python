@@ -1,2 +1,2 @@
 # Data-structures-and-Algorithms-practice
-Implementation of Hash Table using List in python
+Implementation of various Data Structures such as Arrays,Hashtables,Linked List(singly and double), Stacks and Queue's(Array and Linked List) implementation, Trees and Graphs.
