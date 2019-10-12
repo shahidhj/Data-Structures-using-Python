@@ -16,8 +16,8 @@ class Arrays:
 
     def insert(self,index,value):
         self.length = self.length + 1
-        for i in range(len(self.data)-1,index,-1):
-            self.data[i+1] = self.data[i]
+        for i in range(len(self.data),index,-1):
+            #self.data[i+1] = self.data[i]
             self.data[i] = self.data[i-1]
         self.data[index] = value
 
