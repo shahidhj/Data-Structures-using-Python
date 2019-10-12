@@ -24,7 +24,7 @@ class Stack:
             self.top.next = holdingPointer
         self.length = self.length + 1
 
-        return selfS
+        return self
 
     def pop(self):
         self.top = self.top.next
