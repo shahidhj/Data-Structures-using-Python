@@ -1,21 +1,16 @@
 class stackList:
     def __init__(self):
-        self.data =[None] * 10
+        self.data =[]
 
 
     def push(self,value):
-
-        self.data[len(self.data)] = value
-        self.length = self.length + 1
-
+        self.data.append(value)
 
     def pop(self):
-        del self.data[self.length]
-        self.length = self.length-1
-        return self
+        self.data.pop()
 
     def peek(self):
-        return self.data[self.length-1]
+        return self.data[len(self.data)-1]
 
     def printList(self):
         print(self.data)
@@ -23,5 +18,8 @@ class stackList:
 myStack = stackList()
 myStack.push("123")
 myStack.push("12321432")
+myStack.pop()
 myStack.push("12321432324324324")
+a =myStack.peek()
 print(myStack.printList())
+print(a)
