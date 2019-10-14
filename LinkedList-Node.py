@@ -34,7 +34,6 @@ class LinkedList:
         holdingPointer = leader.next
         self.NewNode = Node(value=value)
         leader.next = self.NewNode
-        self.NewNode.previous = leader
         self.NewNode.next = holdingPointer
         self.length = self.length + 1
 
