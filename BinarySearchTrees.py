@@ -41,7 +41,7 @@ class BinarySearchTree:
                     return currentNode
         return False
     """
-    def remove(self,value):
+    def remove(self,value): i will start this today
         if self.root is None:
             return False
         else:
