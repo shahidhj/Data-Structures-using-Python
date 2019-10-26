@@ -26,6 +26,8 @@ class Stack:
 
         return self
 
+
+
     def pop(self):
         self.top = self.top.next
         self.length = self.length -1
@@ -40,11 +42,11 @@ class Stack:
             currentNode = currentNode.next
 
 myStack = Stack()
-myStack.push(10)
-myStack.push(123)
-myStack.push(12312313)
+myStack.pushed(10)
+myStack.pushed(123)
+myStack.pushed(12312313)
 myStack.pop()
-myStack.push(123123131231)
+myStack.pushed(123123131231)
 myStack.printList()
 
 
