@@ -28,7 +28,7 @@ class BinarySearchTree:
                     currentNode = currentNode.left
 
     def lookup(self,value):
-        if(self.root == None):
+        if self.root is  None:
             return False
         else:
             currentNode = self.root
