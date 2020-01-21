@@ -22,6 +22,7 @@ class HashTable:
                 if pairs[0] == key:
                     pairs[1] = value
                     return True
+
             self.map[hash_address].append(key_value)
             return True
 
@@ -61,7 +62,7 @@ class HashTable:
 myFirstHash = HashTable()
 myFirstHash.add("shahid","1234")
 myFirstHash.add("hsahid","abcdefgh")
-myFirstHash.add("abc","3214")
+myFirstHash.add("abc","32143")
 
 myFirstHash.print()
 myFirstHash.keys()
