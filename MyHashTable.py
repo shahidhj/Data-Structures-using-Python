@@ -66,7 +66,10 @@ myFirstHash.add("abc","32143")
 
 myFirstHash.print()
 myFirstHash.keys()
+
 print(myFirstHash.map)
+print(myFirstHash.get("shahid"))
+
 
 
 
