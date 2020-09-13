@@ -35,6 +35,14 @@ class HashTable:
                     return pairs[1]
         return None
 
+    def getOne(self,key):
+        hash_address = self._get_hash(key)
+        for i in range(0,len(self.map[hash_address])):
+            if self.map[hash_address][i][0] == key:
+                return self.map[hash_address][i][1]
+        return None
+
+
     def delete(self,key):
         hash_address = self._get_hash(key)
         if self.map[hash_address] is not None:
@@ -68,7 +76,7 @@ myFirstHash.print()
 myFirstHash.keys()
 
 print(myFirstHash.map)
-print(myFirstHash.get("shahid"))
+print("With get",myFirstHash.get("shahid"))
 
 
 
